@@ -70,6 +70,13 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  for (int index = 0; index < cart.length; index++) {
+    if (cart[index].itemName === item) {
+      cart.splice(index, 1);
+      return cart;
+    }
+  }
+  return "That item is not in your cart.";
 }
 
 function placeOrder(cardNumber) {
