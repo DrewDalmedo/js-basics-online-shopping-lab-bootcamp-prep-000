@@ -82,3 +82,4 @@ addToCart("b");
 addToCart("c");
 addToCart("d");
 addToCart("e");
+console.log(total());
