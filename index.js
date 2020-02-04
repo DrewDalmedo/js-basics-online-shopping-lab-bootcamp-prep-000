@@ -62,6 +62,7 @@ function total() {
 
   for (var i = 0; i < cart.length; i++) {
     tempItem = cart[i];
+    console.log(`item ${tempItem.itemName} costs ${tempItem.itemPrice}`);
     cost += tempItem.itemPrice;
   }
 
@@ -75,3 +76,9 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+addToCart("a");
+addToCart("b");
+addToCart("c");
+addToCart("d");
+addToCart("e");
