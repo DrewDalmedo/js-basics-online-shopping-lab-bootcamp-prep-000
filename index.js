@@ -62,7 +62,6 @@ function total() {
 
   for (var i = 0; i < cart.length; i++) {
     tempItem = cart[i];
-    console.log(`item ${tempItem.itemName} costs ${tempItem.itemPrice}`);
     cost += tempItem.itemPrice;
   }
 
@@ -76,19 +75,3 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
-
-addToCart("a");
-addToCart("b");
-addToCart("c");
-addToCart("d");
-addToCart("e");
-
-console.log("~");
-
-console.log(`${cart[0].itemPrice}`)
-console.log(`${cart[1].itemPrice}`)
-console.log(`${cart[2].itemPrice}`)
-console.log(`${cart[3].itemPrice}`)
-console.log(`${cart[4].itemPrice}`)
-
-console.log(total());
