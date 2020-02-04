@@ -31,8 +31,15 @@ function viewCart() {
    */
 
    var cartOverview = "In your cart, you have ";
+   var tempItem;
+   
+   if (cart.length === 1) {
+     tempItem = cart[0];
+     cartOverview += `${tempItem[itemName]} at ${tempItem[itemPrice]}}`
+   }
+   
    for (var i = 0; i < cart.length; i++) {
-     var tempItem = cart[i];
+     tempItem = cart[i];
      if (i === cart.length - 1) {
        cartOverview += `and ${tempItem[itemName]} at ${tempItem[itemPrice]}.`;
      }
