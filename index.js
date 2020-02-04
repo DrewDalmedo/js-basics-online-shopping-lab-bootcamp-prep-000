@@ -57,12 +57,12 @@ function viewCart() {
 
 function total() {
   // write your code here
-  var totalCost = 0;
+  var cost = 0;
   var tempItem;
 
   for (var i = 0; i < cart.length; i++) {
     tempItem = cart[i];
-    totalCost += tempItem.itemPrice;
+    cost += tempItem.itemPrice;
   }
 
   return totalCost;
