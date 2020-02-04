@@ -70,7 +70,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  for (int index = 0; index < cart.length; index++) {
+  for (var index = 0; index < cart.length; index++) {
     if (cart[index].itemName === item) {
       cart.splice(index, 1);
       return cart;
