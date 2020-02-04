@@ -89,5 +89,5 @@ function placeOrder(cardNumber) {
   cart = [];
 
   return `Your total cost is ${cost}, which will be charged to the card ${cardNumber}.`;
-  
+
 }
