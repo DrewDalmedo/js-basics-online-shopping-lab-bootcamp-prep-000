@@ -17,7 +17,7 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  var newObject = { itemName: item, itemPrice: genPrice(100) };
- cart.unshift(newObject);
+ cart.push(newObject);
  return `${item} has been added to your cart.`;
 }
 
