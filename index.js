@@ -33,6 +33,9 @@ function viewCart() {
    var cartOverview = "In your cart, you have ";
    var tempItem;
 
+   if (cart.length === 0) {
+     return "Your shopping cart is empty.";
+   }
    if (cart.length === 1) {
      tempItem = cart[0];
      cartOverview += `${tempItem[itemName]} at ${tempItem[itemPrice]}`
