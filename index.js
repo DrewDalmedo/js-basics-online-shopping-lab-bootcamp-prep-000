@@ -35,16 +35,17 @@ function viewCart() {
 
    if (cart.length === 1) {
      tempItem = cart[0];
-     cartOverview += `${tempItem[itemName]} at ${tempItem[itemPrice]}}`
+     cartOverview += `${tempItem[itemName]} at ${tempItem[itemPrice]}`
    }
-
-   for (var i = 0; i < cart.length; i++) {
-     tempItem = cart[i];
-     if (i === cart.length - 1) {
-       cartOverview += `and ${tempItem[itemName]} at ${tempItem[itemPrice]}.`;
-     }
-     else {
-       cartOverview += `${tempItem[itemName]} at ${tempItem[itemPrice]}, `;
+   else {
+     for (var i = 0; i < cart.length; i++) {
+       tempItem = cart[i];
+       if (i === cart.length - 1) {
+         cartOverview += `and ${tempItem[itemName]} at ${tempItem[itemPrice]}.`;
+       }
+       else {
+         cartOverview += `${tempItem[itemName]} at ${tempItem[itemPrice]}, `;
+       }
      }
    }
 
