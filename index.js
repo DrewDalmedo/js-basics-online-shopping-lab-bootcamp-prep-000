@@ -65,7 +65,7 @@ function total() {
     cost += tempItem.itemPrice;
   }
 
-  return totalCost;
+  return cost;
 }
 
 function removeFromCart(item) {
