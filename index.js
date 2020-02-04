@@ -82,4 +82,13 @@ addToCart("b");
 addToCart("c");
 addToCart("d");
 addToCart("e");
+
+console.log("~");
+
+console.log(`${cart[0].itemPrice}`)
+console.log(`${cart[1].itemPrice}`)
+console.log(`${cart[2].itemPrice}`)
+console.log(`${cart[3].itemPrice}`)
+console.log(`${cart[4].itemPrice}`)
+
 console.log(total());
